@@ -1,0 +1,26 @@
+/* Presets */
+@import './presets.css';
+
+/* Header */
+@import './header.css';
+
+/* Main */
+@import './main.css';
+
+/* Sobre */
+@import './sobre.css';
+
+/* Habilidades */
+@import './habilidades.css';
+
+/* Projetos */
+@import './projetos.css';
+
+/* Contato */
+@import './contato.css';
+
+/* Footer */
+@import './footer.css';
+
+/* Modal */
+@import './modal.css';

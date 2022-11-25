@@ -1,0 +1,155 @@
+.modal {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none; /* flex */
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease-in-out;
+}
+
+.modal img {
+  max-width: 700px;
+}
+
+.modal-container {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  background-color: #191919;
+  padding: 35px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 10px #191919;
+  position: relative;
+}
+
+.modal-container .fechar {
+  width: 50px;
+  height: 50px;
+  border: 4px solid white;
+  top: -30px;
+  right: -30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #8257e6;
+  color: #fff;
+}
+
+.modal-container .fechar:hover {
+  cursor: pointer;
+}
+
+.modal-container h2 {
+  margin-bottom: 15px;
+  color: #8257e6;
+}
+
+.modal-container .desc {
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.modal-container .tec {
+  margin-bottom: 30px;
+}
+
+.modal-container h3 {
+  color: #8257e6;
+  margin-bottom: 15px;
+}
+
+.modal-container .botoes-container {
+  display: flex;
+  gap: 15px;
+}
+
+.modal-container .btn-link {
+  padding: 10px 24px;
+  border-radius: 24px;
+  background-color: #8257e6;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease-out;
+}
+
+.modal-container .btn-link:hover {
+  background-color: #603472;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .modal-container {
+    grid-template-columns: 1fr;
+  }
+
+  .modal img {
+    max-width: 700px;
+  }
+
+  .modal-container .texto {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal img {
+    max-width: 600px;
+  }
+
+  .modal-container .texto {
+    max-width: 600px;
+  }
+
+  .modal-container .fechar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 740px) {
+  .modal-container .imagem {
+    display: none;
+  }
+
+  .modal-container .texto {
+    max-width: 250px;
+  }
+
+  .modal-container .botoes-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-container .desc,
+  .modal-container .tec {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-container {
+    padding: 25px;
+  }
+
+  .modal-container .texto {
+    max-width: 200px;
+  }
+
+  .modal-container .desc,
+  .modal-container .tec {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .modal-container .btn-link {
+    padding: 8px 22px;
+  }
+}
