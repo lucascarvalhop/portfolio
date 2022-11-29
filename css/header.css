@@ -88,10 +88,10 @@ header a button:hover {
 
   header ul {
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     right: 0;
     width: 100vw;
-    height: 90vh;
+    height: 92vh;
     background-color: #070707;
     flex-direction: column;
     align-items: center;
@@ -111,5 +111,12 @@ header a button:hover {
 
   .mobile-menu {
     display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  header ul {
+    top: 12vh;
+    height: 88vh;
   }
 }
