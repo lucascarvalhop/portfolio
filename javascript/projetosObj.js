@@ -27,7 +27,7 @@ export default function projetosObj() {
     {
       title: 'Urna eletrônica',
       src: './imgs/projetos/urnaEletronica.png',
-      desc: 'Este projeto foi feito com base no simulador de votação do Tribunal Superior Eleitoral (TSE). Nele foi feita uma urna eletrônica com todas as funções presentes na urna verdadeira, os candidatos elegíveis são informado com nome e numero para votação na própia página.',
+      desc: 'Este projeto foi feito com base no simulador de votação do Tribunal Superior Eleitoral (TSE). Nele foi feita uma urna eletrônica com todas as funções presentes na urna verdadeira, os candidatos elegíveis são informados com nome e numero para votação na própia página.',
       tecU: 'HTML / CSS / JavaScript',
       projeto: 'https://lucascarvalhop.github.io/Simulador-de-Urna-Eletronica/',
       repositorio:
